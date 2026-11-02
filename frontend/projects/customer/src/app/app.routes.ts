@@ -1,0 +1,29 @@
+import { Routes } from '@angular/router';
+import { LandingComponent } from './pages/landing/landing.component';
+import { ProductListComponent } from './pages/products/product-list.component';
+import { ProductDetailComponent } from './pages/products/product-detail.component';
+import { ShopListComponent } from './pages/shops/shop-list.component';
+import { ShopDetailComponent } from './pages/shops/shop-detail.component';
+import { CartComponent } from './pages/cart/cart.component';
+import { CheckoutComponent } from './pages/checkout/checkout.component';
+import { OrdersComponent } from './pages/orders/orders.component';
+import { TrackingComponent } from './pages/orders/tracking.component';
+import { LoginComponent } from './pages/auth/login.component';
+import { RegisterComponent } from './pages/auth/register.component';
+import { VendorApplyComponent } from './pages/vendor-apply/vendor-apply.component';
+
+export const routes: Routes = [
+  { path: '', component: LandingComponent },
+  { path: 'products', component: ProductListComponent },
+  { path: 'products/:slug', component: ProductDetailComponent },
+  { path: 'shops', component: ShopListComponent },
+  { path: 'shops/:id', component: ShopDetailComponent },
+  { path: 'cart', component: CartComponent },
+  { path: 'checkout', component: CheckoutComponent },
+  { path: 'orders', component: OrdersComponent },
+  { path: 'orders/:id/tracking', component: TrackingComponent },
+  { path: 'login', component: LoginComponent },
+  { path: 'register', component: RegisterComponent },
+  { path: 'apply-vendor', component: VendorApplyComponent },
+  { path: '**', redirectTo: '' }
+];

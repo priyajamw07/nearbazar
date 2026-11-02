@@ -1,0 +1,731 @@
+{
+  "users": [
+    {
+      "email": "admin@nearbybazaar.com",
+      "password_hash": "pbkdf2_sha256$1500000$E5CFU0mfLLgTooIUKxYS1u$EPRqItaZdqznhBY+xuDjH2pZvGojFPDLZb1KbxfrhH4=",
+      "full_name": "Super Administrator",
+      "phone": "+91 98000 00001",
+      "role": "SUPER_ADMIN",
+      "is_active": true,
+      "shop_id": null,
+      "created_at": {
+        "$date": "2026-10-29T03:32:06.121000"
+      },
+      "updated_at": {
+        "$date": "2026-10-29T03:32:06.121000"
+      },
+      "_id": {
+        "$oid": "6ae2be36a22925b9d0357b73"
+      }
+    },
+    {
+      "email": "vendor@sharmakirana.com",
+      "password_hash": "pbkdf2_sha256$1500000$cRgFBjH8pAQ4yegMeQ3jO6$xQ9AFBX7maznPTYCmCtOx+Uj4gwMAEm1X7rZZDtA1ec=",
+      "full_name": "Ram Sharma",
+      "phone": "+91 98111 22334",
+      "role": "VENDOR_ADMIN",
+      "is_active": true,
+      "shop_id": {
+        "$oid": "6ae2be36a22925b9d0357b75"
+      },
+      "created_at": {
+        "$date": "2026-10-29T03:32:06.924000"
+      },
+      "updated_at": {
+        "$date": "2026-10-29T03:32:06.924000"
+      },
+      "_id": {
+        "$oid": "6ae2be36a22925b9d0357b74"
+      }
+    },
+    {
+      "email": "vendor@kumarelec.com",
+      "password_hash": "pbkdf2_sha256$1500000$0r90pF7Ag8SJLUELe7Ev6U$72N0MVlReQO1TUonofdQM8e5bBgcMi/lYG9uS7Cb1D0=",
+      "full_name": "Sunil Kumar",
+      "phone": "+91 98222 33445",
+      "role": "VENDOR_ADMIN",
+      "is_active": true,
+      "shop_id": {
+        "$oid": "6ae2be37a22925b9d0357b77"
+      },
+      "created_at": {
+        "$date": "2026-10-29T03:32:07.731000"
+      },
+      "updated_at": {
+        "$date": "2026-10-29T03:32:07.731000"
+      },
+      "_id": {
+        "$oid": "6ae2be37a22925b9d0357b76"
+      }
+    },
+    {
+      "email": "vendor@clothestrendz.com",
+      "password_hash": "pbkdf2_sha256$1500000$hQsU3OMX05qLEueH8FGy11$KEy51MkSvrz86r9si6fwLn+tpgQIUvAQ7+Qny9yzRRE=",
+      "full_name": "Pooja Verma",
+      "phone": "+91 98333 44556",
+      "role": "VENDOR_ADMIN",
+      "is_active": true,
+      "shop_id": {
+        "$oid": "6ae2be38a22925b9d0357b79"
+      },
+      "created_at": {
+        "$date": "2026-10-29T03:32:08.537000"
+      },
+      "updated_at": {
+        "$date": "2026-10-29T03:32:08.537000"
+      },
+      "_id": {
+        "$oid": "6ae2be38a22925b9d0357b78"
+      }
+    },
+    {
+      "email": "applicant@leelabazaar.com",
+      "password_hash": "pbkdf2_sha256$1500000$ZqKuRG8nahoPiF7n0Honjj$2iDMnI58QFWEy0CsFFzfL3uU3Qnw7L5dHcICI3i+5Fs=",
+      "full_name": "Leela Ram",
+      "phone": "+91 98444 55667",
+      "role": "CUSTOMER",
+      "is_active": true,
+      "shop_id": null,
+      "created_at": {
+        "$date": "2026-10-29T03:32:09.368000"
+      },
+      "updated_at": {
+        "$date": "2026-10-29T03:32:09.368000"
+      },
+      "_id": {
+        "$oid": "6ae2be39a22925b9d0357b7a"
+      }
+    },
+    {
+      "email": "customer@nearbybazaar.com",
+      "password_hash": "pbkdf2_sha256$1500000$QJUJsv6Rt8VjBgIj680RAu$GhDTEK6UuvpGqgp/veLJE6Jc6Oh/YLXfAwXWMrN2UGE=",
+      "full_name": "Aarav Gupta",
+      "phone": "+91 98555 66778",
+      "role": "CUSTOMER",
+      "is_active": true,
+      "shop_id": null,
+      "created_at": {
+        "$date": "2026-10-29T03:32:10.180000"
+      },
+      "updated_at": {
+        "$date": "2026-10-29T03:32:10.180000"
+      },
+      "_id": {
+        "$oid": "6ae2be3aa22925b9d0357b7c"
+      }
+    }
+  ],
+  "shops": [
+    {
+      "vendor_id": {
+        "$oid": "6ae2be36a22925b9d0357b74"
+      },
+      "name": "Sharma Kirana & General Store",
+      "slug": "sharma-kirana",
+      "category": "Groceries",
+      "description": "Serving the neighborhood with pure grains, dairy, fresh spices, and daily essentials for 25 years.",
+      "address": {
+        "street": "Shop #4, Main Market, Sector 14",
+        "city": "Delhi NCR",
+        "pincode": "110001"
+      },
+      "phone": "+91 98111 22334",
+      "status": "APPROVED",
+      "rating": 4.8,
+      "review_count": 324,
+      "opening_time": "07:30",
+      "closing_time": "21:30",
+      "is_open": true,
+      "image_url": "assets/images/sharma_kirana.jpg",
+      "created_at": {
+        "$date": "2026-10-29T03:32:06.927000"
+      },
+      "_id": {
+        "$oid": "6ae2be36a22925b9d0357b75"
+      }
+    },
+    {
+      "vendor_id": {
+        "$oid": "6ae2be37a22925b9d0357b76"
+      },
+      "name": "Kumar Electronics & Mobile Care",
+      "slug": "kumar-electronics",
+      "category": "Electronics",
+      "description": "Genuine phone chargers, headphones, smart cables, home electricals, and rapid repair services.",
+      "address": {
+        "street": "Shop #12, Commercial Complex, Sector 14",
+        "city": "Delhi NCR",
+        "pincode": "110001"
+      },
+      "phone": "+91 98222 33445",
+      "status": "APPROVED",
+      "rating": 4.6,
+      "review_count": 188,
+      "opening_time": "10:00",
+      "closing_time": "20:30",
+      "is_open": true,
+      "image_url": "assets/images/kumar_electronics.jpg",
+      "created_at": {
+        "$date": "2026-10-29T03:32:07.733000"
+      },
+      "_id": {
+        "$oid": "6ae2be37a22925b9d0357b77"
+      }
+    },
+    {
+      "vendor_id": {
+        "$oid": "6ae2be38a22925b9d0357b78"
+      },
+      "name": "Clothes Trendz & Matching Center",
+      "slug": "clothes-trendz",
+      "category": "Fashion & Clothes",
+      "description": "Trendy casual shirts, traditional cotton kurtas, dupattas, and seasonal apparel for the family.",
+      "address": {
+        "street": "Shop #28, Fashion Lane, Sector 14",
+        "city": "Delhi NCR",
+        "pincode": "110001"
+      },
+      "phone": "+91 98333 44556",
+      "status": "APPROVED",
+      "rating": 4.7,
+      "review_count": 94,
+      "opening_time": "10:30",
+      "closing_time": "21:00",
+      "is_open": true,
+      "image_url": "assets/images/clothes_trendz.jpg",
+      "created_at": {
+        "$date": "2026-10-29T03:32:08.539000"
+      },
+      "_id": {
+        "$oid": "6ae2be38a22925b9d0357b79"
+      }
+    }
+  ],
+  "shop_applications": [
+    {
+      "vendor_id": {
+        "$oid": "6ae2be39a22925b9d0357b7a"
+      },
+      "shop_name": "Leela Bazaar Fresh Veggies & Fruits",
+      "business_type": "Fresh Vegetables",
+      "owner_name": "Leela Ram",
+      "phone": "+91 98444 55667",
+      "email": "applicant@leelabazaar.com",
+      "address": "Stall 2, Subzi Mandi, Main Road",
+      "documents": [
+        "gstin_certificate.pdf",
+        "fssai_mandate.pdf"
+      ],
+      "status": "PENDING",
+      "review_notes": "",
+      "created_at": {
+        "$date": "2026-10-29T03:32:09.370000"
+      },
+      "_id": {
+        "$oid": "6ae2be39a22925b9d0357b7b"
+      }
+    }
+  ],
+  "categories": [
+    {
+      "name": "Groceries",
+      "slug": "groceries",
+      "icon": "shopping-basket",
+      "image_url": "assets/images/cat_groceries.jpg",
+      "item_count": 12,
+      "is_active": true,
+      "_id": {
+        "$oid": "6ae2be35a22925b9d0357b6d"
+      }
+    },
+    {
+      "name": "Fresh Vegetables",
+      "slug": "vegetables",
+      "icon": "leaf",
+      "image_url": "assets/images/cat_veggies.jpg",
+      "item_count": 8,
+      "is_active": true,
+      "_id": {
+        "$oid": "6ae2be35a22925b9d0357b6e"
+      }
+    },
+    {
+      "name": "Electronics",
+      "slug": "electronics",
+      "icon": "cpu",
+      "image_url": "assets/images/cat_electronics.jpg",
+      "item_count": 6,
+      "is_active": true,
+      "_id": {
+        "$oid": "6ae2be35a22925b9d0357b6f"
+      }
+    },
+    {
+      "name": "Fashion & Clothes",
+      "slug": "fashion",
+      "icon": "tag",
+      "image_url": "assets/images/cat_fashion.jpg",
+      "item_count": 8,
+      "is_active": true,
+      "_id": {
+        "$oid": "6ae2be35a22925b9d0357b70"
+      }
+    },
+    {
+      "name": "Packaged Goods",
+      "slug": "packaged-goods",
+      "icon": "box",
+      "image_url": "assets/images/cat_packaged.jpg",
+      "item_count": 10,
+      "is_active": true,
+      "_id": {
+        "$oid": "6ae2be35a22925b9d0357b71"
+      }
+    },
+    {
+      "name": "Snacks & Namkeen",
+      "slug": "snacks",
+      "icon": "coffee",
+      "image_url": "assets/images/cat_snacks.jpg",
+      "item_count": 7,
+      "is_active": true,
+      "_id": {
+        "$oid": "6ae2be35a22925b9d0357b72"
+      }
+    }
+  ],
+  "products": [
+    {
+      "shop_id": {
+        "$oid": "6ae2be36a22925b9d0357b75"
+      },
+      "shop_name": "Sharma Kirana & General Store",
+      "name": "Farm Fresh Tomatoes (Tamatar)",
+      "slug": "farm-fresh-tomatoes",
+      "category_id": {
+        "$oid": "6ae2be35a22925b9d0357b6e"
+      },
+      "category_name": "Fresh Vegetables",
+      "description": "Direct from local farms, ripe juicy red tomatoes suitable for daily Indian curries.",
+      "sku": "SHM-VEG-TOM-01",
+      "price_cents": 3500,
+      "compare_price_cents": 4500,
+      "stock_quantity": 150,
+      "unit": "1 kg",
+      "is_available": true,
+      "image_url": "assets/images/prod_tomatoes.jpg",
+      "created_at": {
+        "$date": "2026-10-29T03:32:10.183000"
+      },
+      "updated_at": {
+        "$date": "2026-10-29T03:32:10.183000"
+      },
+      "_id": {
+        "$oid": "6ae2be3aa22925b9d0357b7d"
+      }
+    },
+    {
+      "shop_id": {
+        "$oid": "6ae2be36a22925b9d0357b75"
+      },
+      "shop_name": "Sharma Kirana & General Store",
+      "name": "Fresh Green Cauliflower (Phool Gobhi)",
+      "slug": "fresh-cauliflower",
+      "category_id": {
+        "$oid": "6ae2be35a22925b9d0357b6e"
+      },
+      "category_name": "Fresh Vegetables",
+      "description": "Crisp, pesticide-free fresh white cauliflower with vibrant green leaves.",
+      "sku": "SHM-VEG-GOB-02",
+      "price_cents": 4000,
+      "compare_price_cents": 5000,
+      "stock_quantity": 80,
+      "unit": "1 pc (approx 700g)",
+      "is_available": true,
+      "image_url": "assets/images/prod_cauliflower.jpg",
+      "created_at": {
+        "$date": "2026-10-29T03:32:10.183000"
+      },
+      "updated_at": {
+        "$date": "2026-10-29T03:32:10.183000"
+      },
+      "_id": {
+        "$oid": "6ae2be3aa22925b9d0357b7e"
+      }
+    },
+    {
+      "shop_id": {
+        "$oid": "6ae2be36a22925b9d0357b75"
+      },
+      "shop_name": "Sharma Kirana & General Store",
+      "name": "Aashirvaad Shudh Chakki Atta",
+      "slug": "aashirvaad-shudh-chakki-atta-5kg",
+      "category_id": {
+        "$oid": "6ae2be35a22925b9d0357b6d"
+      },
+      "category_name": "Groceries",
+      "description": "100% pure whole wheat flour chakki milled for soft fluffy rotis.",
+      "sku": "SHM-GRO-ATT-05",
+      "price_cents": 23500,
+      "compare_price_cents": 27000,
+      "stock_quantity": 45,
+      "unit": "5 kg bag",
+      "is_available": true,
+      "image_url": "assets/images/prod_atta.jpg",
+      "created_at": {
+        "$date": "2026-10-29T03:32:10.183000"
+      },
+      "updated_at": {
+        "$date": "2026-10-29T03:32:10.183000"
+      },
+      "_id": {
+        "$oid": "6ae2be3aa22925b9d0357b7f"
+      }
+    },
+    {
+      "shop_id": {
+        "$oid": "6ae2be36a22925b9d0357b75"
+      },
+      "shop_name": "Sharma Kirana & General Store",
+      "name": "Haldiram Nagpur Bhujia Sev",
+      "slug": "haldiram-nagpur-bhujia-sev",
+      "category_id": {
+        "$oid": "6ae2be35a22925b9d0357b72"
+      },
+      "category_name": "Snacks & Namkeen",
+      "description": "Crispy spicy tepary bean and chickpea flour noodles with a touch of red chili.",
+      "sku": "SHM-SNK-BHU-01",
+      "price_cents": 9500,
+      "compare_price_cents": 11000,
+      "stock_quantity": 90,
+      "unit": "400g pouch",
+      "is_available": true,
+      "image_url": "assets/images/prod_bhujia.jpg",
+      "created_at": {
+        "$date": "2026-10-29T03:32:10.183000"
+      },
+      "updated_at": {
+        "$date": "2026-10-29T03:32:10.183000"
+      },
+      "_id": {
+        "$oid": "6ae2be3aa22925b9d0357b80"
+      }
+    },
+    {
+      "shop_id": {
+        "$oid": "6ae2be36a22925b9d0357b75"
+      },
+      "shop_name": "Sharma Kirana & General Store",
+      "name": "Fortune Sunlite Refined Sunflower Oil",
+      "slug": "fortune-sunlite-sunflower-oil-1l",
+      "category_id": {
+        "$oid": "6ae2be35a22925b9d0357b71"
+      },
+      "category_name": "Packaged Goods",
+      "description": "Enriched with Vitamin A and D, light and healthy cooking medium.",
+      "sku": "SHM-PKG-OIL-01",
+      "price_cents": 14500,
+      "compare_price_cents": 16500,
+      "stock_quantity": 60,
+      "unit": "1 Litre pouch",
+      "is_available": true,
+      "image_url": "assets/images/prod_oil.jpg",
+      "created_at": {
+        "$date": "2026-10-29T03:32:10.183000"
+      },
+      "updated_at": {
+        "$date": "2026-10-29T03:32:10.183000"
+      },
+      "_id": {
+        "$oid": "6ae2be3aa22925b9d0357b81"
+      }
+    },
+    {
+      "shop_id": {
+        "$oid": "6ae2be37a22925b9d0357b77"
+      },
+      "shop_name": "Kumar Electronics & Mobile Care",
+      "name": "Fast Charging Braided Type-C Cable",
+      "slug": "fast-charging-braided-type-c-cable",
+      "category_id": {
+        "$oid": "6ae2be35a22925b9d0357b6f"
+      },
+      "category_name": "Electronics",
+      "description": "65W Dash/VOOC ultra-durable nylon braided charging cable for Android devices.",
+      "sku": "KMR-ELE-CAB-01",
+      "price_cents": 19900,
+      "compare_price_cents": 39900,
+      "stock_quantity": 75,
+      "unit": "1.5 meter",
+      "is_available": true,
+      "image_url": "assets/images/prod_cable.jpg",
+      "created_at": {
+        "$date": "2026-10-29T03:32:10.183000"
+      },
+      "updated_at": {
+        "$date": "2026-10-29T03:32:10.183000"
+      },
+      "_id": {
+        "$oid": "6ae2be3aa22925b9d0357b82"
+      }
+    },
+    {
+      "shop_id": {
+        "$oid": "6ae2be37a22925b9d0357b77"
+      },
+      "shop_name": "Kumar Electronics & Mobile Care",
+      "name": "boAt BassHeads 100 Wired Earphones",
+      "slug": "boat-bassheads-100-earphones",
+      "category_id": {
+        "$oid": "6ae2be35a22925b9d0357b6f"
+      },
+      "category_name": "Electronics",
+      "description": "Hawk-inspired in-ear stereo headphones with built-in mic and super extra bass.",
+      "sku": "KMR-ELE-EAR-02",
+      "price_cents": 39900,
+      "compare_price_cents": 59900,
+      "stock_quantity": 40,
+      "unit": "1 unit with carry pouch",
+      "is_available": true,
+      "image_url": "assets/images/prod_earphones.jpg",
+      "created_at": {
+        "$date": "2026-10-29T03:32:10.183000"
+      },
+      "updated_at": {
+        "$date": "2026-10-29T03:32:10.183000"
+      },
+      "_id": {
+        "$oid": "6ae2be3aa22925b9d0357b83"
+      }
+    },
+    {
+      "shop_id": {
+        "$oid": "6ae2be38a22925b9d0357b79"
+      },
+      "shop_name": "Clothes Trendz & Matching Center",
+      "name": "Casual Pure Cotton Checked Shirt",
+      "slug": "casual-pure-cotton-checked-shirt",
+      "category_id": {
+        "$oid": "6ae2be35a22925b9d0357b70"
+      },
+      "category_name": "Fashion & Clothes",
+      "description": "Breathable pre-washed pure cotton regular fit shirt with chest pocket.",
+      "sku": "TRZ-FAS-SHT-01",
+      "price_cents": 59900,
+      "compare_price_cents": 89900,
+      "stock_quantity": 35,
+      "unit": "Size: L (40)",
+      "is_available": true,
+      "image_url": "assets/images/prod_shirt.jpg",
+      "created_at": {
+        "$date": "2026-10-29T03:32:10.183000"
+      },
+      "updated_at": {
+        "$date": "2026-10-29T03:32:10.183000"
+      },
+      "_id": {
+        "$oid": "6ae2be3aa22925b9d0357b84"
+      }
+    }
+  ],
+  "seller_orders": [
+    {
+      "parent_order_number": "NBZ-20261029-220101",
+      "shop_id": {
+        "$oid": "6ae2be36a22925b9d0357b75"
+      },
+      "shop_name": "Sharma Kirana & General Store",
+      "customer_id": {
+        "$oid": "6ae2be3aa22925b9d0357b7c"
+      },
+      "customer_name": "Deepak Verma",
+      "items": [
+        {
+          "name": "Packaged Provisions (Atta 5kg, Oil 1L)",
+          "quantity": 1,
+          "price_cents": 11000
+        }
+      ],
+      "subtotal_cents": 11000,
+      "delivery_fee_cents": 3000,
+      "total_cents": 14000,
+      "status": "PROCESSING",
+      "status_history": [
+        {
+          "status": "PENDING",
+          "timestamp": {
+            "$date": "2026-10-29T03:32:10.186000"
+          },
+          "note": "Order received"
+        },
+        {
+          "status": "PROCESSING",
+          "timestamp": {
+            "$date": "2026-10-29T03:32:10.186000"
+          },
+          "note": "Items packed by shopkeeper"
+        }
+      ],
+      "created_at": {
+        "$date": "2026-10-29T03:32:10.186000"
+      },
+      "_id": {
+        "$oid": "6ae2be3aa22925b9d0357b85"
+      }
+    },
+    {
+      "parent_order_number": "NBZ-20261029-220102",
+      "shop_id": {
+        "$oid": "6ae2be36a22925b9d0357b75"
+      },
+      "shop_name": "Sharma Kirana & General Store",
+      "customer_id": {
+        "$oid": "6ae2be3aa22925b9d0357b7c"
+      },
+      "customer_name": "Sunita Devi",
+      "items": [
+        {
+          "name": "Fresh Veggies (Tomatoes, Cauliflower)",
+          "quantity": 1,
+          "price_cents": 7500
+        }
+      ],
+      "subtotal_cents": 7500,
+      "delivery_fee_cents": 3000,
+      "total_cents": 10500,
+      "status": "CONFIRMED",
+      "status_history": [
+        {
+          "status": "PENDING",
+          "timestamp": {
+            "$date": "2026-10-29T03:32:10.189000"
+          },
+          "note": "Order received"
+        },
+        {
+          "status": "CONFIRMED",
+          "timestamp": {
+            "$date": "2026-10-29T03:32:10.189000"
+          },
+          "note": "Items packed by shopkeeper"
+        }
+      ],
+      "created_at": {
+        "$date": "2026-10-29T03:32:10.189000"
+      },
+      "_id": {
+        "$oid": "6ae2be3aa22925b9d0357b86"
+      }
+    },
+    {
+      "parent_order_number": "NBZ-20261029-220103",
+      "shop_id": {
+        "$oid": "6ae2be36a22925b9d0357b75"
+      },
+      "shop_name": "Sharma Kirana & General Store",
+      "customer_id": {
+        "$oid": "6ae2be3aa22925b9d0357b7c"
+      },
+      "customer_name": "Rahul Mehta",
+      "items": [
+        {
+          "name": "Snacks (Haldiram Bhujia x 2)",
+          "quantity": 1,
+          "price_cents": 19000
+        }
+      ],
+      "subtotal_cents": 19000,
+      "delivery_fee_cents": 3000,
+      "total_cents": 22000,
+      "status": "CONFIRMED",
+      "status_history": [
+        {
+          "status": "PENDING",
+          "timestamp": {
+            "$date": "2026-10-29T03:32:10.192000"
+          },
+          "note": "Order received"
+        },
+        {
+          "status": "CONFIRMED",
+          "timestamp": {
+            "$date": "2026-10-29T03:32:10.192000"
+          },
+          "note": "Items packed by shopkeeper"
+        }
+      ],
+      "created_at": {
+        "$date": "2026-10-29T03:32:10.192000"
+      },
+      "_id": {
+        "$oid": "6ae2be3aa22925b9d0357b87"
+      }
+    },
+    {
+      "parent_order_number": "NBZ-20261029-220104",
+      "shop_id": {
+        "$oid": "6ae2be36a22925b9d0357b75"
+      },
+      "shop_name": "Sharma Kirana & General Store",
+      "customer_id": {
+        "$oid": "6ae2be3aa22925b9d0357b7c"
+      },
+      "customer_name": "Sonia Sethi",
+      "items": [
+        {
+          "name": "Daily Grocery items",
+          "quantity": 1,
+          "price_cents": 5000
+        }
+      ],
+      "subtotal_cents": 5000,
+      "delivery_fee_cents": 3000,
+      "total_cents": 8000,
+      "status": "CONFIRMED",
+      "status_history": [
+        {
+          "status": "PENDING",
+          "timestamp": {
+            "$date": "2026-10-29T03:32:10.196000"
+          },
+          "note": "Order received"
+        },
+        {
+          "status": "CONFIRMED",
+          "timestamp": {
+            "$date": "2026-10-29T03:32:10.196000"
+          },
+          "note": "Items packed by shopkeeper"
+        }
+      ],
+      "created_at": {
+        "$date": "2026-10-29T03:32:10.196000"
+      },
+      "_id": {
+        "$oid": "6ae2be3aa22925b9d0357b88"
+      }
+    }
+  ],
+  "audit_logs": [
+    {
+      "actor_id": {
+        "$oid": "6ae2be36a22925b9d0357b73"
+      },
+      "actor_email": "admin@nearbybazaar.com",
+      "actor_role": "SUPER_ADMIN",
+      "action": "SYSTEM_INITIALIZED",
+      "target_type": "platform",
+      "target_id": "nearbybazaar_core",
+      "ip_address": "127.0.0.1",
+      "metadata": {
+        "message": "Platform seeded with local Indian neighborhood demo data."
+      },
+      "created_at": {
+        "$date": "2026-10-29T03:32:10.201000"
+      },
+      "_id": {
+        "$oid": "6ae2be3aa22925b9d0357b89"
+      }
+    }
+  ]
+}

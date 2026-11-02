@@ -1,0 +1,35 @@
+{
+  "name": "nearbybazaar-frontend",
+  "version": "1.0.0",
+  "description": "NearbyBazaar: Ghar Tak — Apki Apni Dukaan (Multi-Portal Frontend)",
+  "private": true,
+  "scripts": {
+    "ng": "ng",
+    "start:customer": "ng serve customer --port 4200",
+    "start:vendor": "ng serve vendor --port 4201",
+    "start:admin": "ng serve admin --port 4202",
+    "build:customer": "ng build customer",
+    "build:vendor": "ng build vendor",
+    "build:admin": "ng build admin",
+    "build": "ng build customer && ng build vendor && ng build admin"
+  },
+  "dependencies": {
+    "@angular/animations": "^17.3.0",
+    "@angular/common": "^17.3.0",
+    "@angular/compiler": "^17.3.0",
+    "@angular/core": "^17.3.0",
+    "@angular/forms": "^17.3.0",
+    "@angular/platform-browser": "^17.3.0",
+    "@angular/platform-browser-dynamic": "^17.3.0",
+    "@angular/router": "^17.3.0",
+    "rxjs": "~7.8.0",
+    "tslib": "^2.3.0",
+    "zone.js": "~0.14.3"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "^17.3.0",
+    "@angular/cli": "^17.3.0",
+    "@angular/compiler-cli": "^17.3.0",
+    "typescript": "~5.4.2"
+  }
+}

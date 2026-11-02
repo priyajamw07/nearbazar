@@ -1,0 +1,149 @@
+@import '../../shared/styles/tokens.scss';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $font-family-body;
+  color: $color-text-dark;
+  background-color: $color-light-neutral;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+body.bg-navy {
+  background-color: $color-deep-navy;
+  color: $color-white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-family-heading;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color $transition-fast;
+}
+
+button {
+  cursor: pointer;
+  font-family: $font-family-body;
+  border: none;
+  outline: none;
+  transition: all $transition-fast;
+}
+
+// Global Reusable Buttons
+.btn-primary {
+  background: linear-gradient(135deg, $color-primary-blue, darken($color-primary-blue, 10%));
+  color: $color-white;
+  padding: 10px 20px;
+  border-radius: $radius-md;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 4px 12px rgba(8, 121, 209, 0.35);
+
+  &:hover {
+    filter: brightness(1.1);
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px rgba(8, 121, 209, 0.5);
+  }
+}
+
+.btn-orange {
+  background: linear-gradient(135deg, $color-warm-orange, darken($color-warm-orange, 8%));
+  color: $color-white;
+  padding: 8px 16px;
+  border-radius: $radius-md;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  box-shadow: 0 4px 12px rgba(255, 138, 36, 0.35);
+
+  &:hover {
+    filter: brightness(1.1);
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px rgba(255, 138, 36, 0.5);
+  }
+}
+
+.btn-cyan {
+  background: linear-gradient(135deg, $color-cyan-accent, $color-primary-blue);
+  color: $color-deep-navy;
+  padding: 10px 22px;
+  border-radius: $radius-md;
+  font-weight: 700;
+  box-shadow: $glow-cyan;
+
+  &:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.15);
+  }
+}
+
+.btn-outline {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: $color-white;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 8px 16px;
+  border-radius: $radius-md;
+  font-weight: 600;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: $color-cyan-accent;
+  }
+}
+
+// Glowing Neon Cards
+.neon-border-card {
+  background: rgba(11, 45, 77, 0.7);
+  backdrop-filter: blur(12px);
+  border: 2px solid $color-cyan-accent;
+  border-radius: $radius-lg;
+  box-shadow: $glow-cyan;
+  transition: all $transition-normal;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0 25px rgba(53, 217, 255, 0.65), 0 0 45px rgba(8, 121, 209, 0.4);
+  }
+}
+
+// Status Badges
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 10px;
+  border-radius: $radius-full;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.badge-success {
+  background-color: rgba(25, 135, 84, 0.15);
+  color: $color-success;
+  border: 1px solid rgba(25, 135, 84, 0.3);
+}
+
+.badge-warning {
+  background-color: rgba(255, 138, 36, 0.15);
+  color: $color-warm-orange;
+  border: 1px solid rgba(255, 138, 36, 0.3);
+}
+
+.badge-info {
+  background-color: rgba(53, 217, 255, 0.15);
+  color: $color-cyan-accent;
+  border: 1px solid rgba(53, 217, 255, 0.3);
+}

@@ -1,0 +1,43 @@
+/* Design Tokens & Styles for Super Admin Control Center */
+:root {
+  --navy-deep: #06172B;
+  --navy-dark: #0B2D4D;
+  --blue-primary: #0879D1;
+  --cyan-accent: #35D9FF;
+  --warm-orange: #FF8A24;
+  --bg-light: #F4F7FA;
+  --text-primary: #0F172A;
+  --text-secondary: #64748B;
+  --border-color: #E2E8F0;
+  --card-bg: #FFFFFF;
+  --success: #198754;
+  --warning: #D97706;
+  --danger: #DC3545;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: var(--bg-light);
+  color: var(--text-primary);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, .font-heading {
+  font-family: 'Outfit', 'Inter', sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+}

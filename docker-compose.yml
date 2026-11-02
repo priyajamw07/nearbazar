@@ -1,0 +1,77 @@
+version: '3.8'
+
+services:
+  mongodb:
+    image: mongo:7.0
+    container_name: nearbybazaar_mongodb
+    restart: unless-stopped
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_DATABASE: nearbybazaar
+    volumes:
+      - mongo_data:/data/db
+
+  redis:
+    image: redis:7.2-alpine
+    container_name: nearbybazaar_redis
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: ../infrastructure/docker/Dockerfile.backend
+    container_name: nearbybazaar_backend
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      - DEBUG=True
+      - SECRET_KEY=production-hardened-secret-key-nearbybazaar-2026
+      - MONGODB_URI=mongodb://mongodb:27017/nearbybazaar
+      - MONGODB_DB_NAME=nearbybazaar
+      - REDIS_URL=redis://redis:6379/0
+      - CORS_ALLOWED_ORIGINS=http://localhost:4200,http://localhost:4201,http://localhost:4202
+    depends_on:
+      - mongodb
+      - redis
+    volumes:
+      - ./backend/media:/app/media
+
+  customer:
+    build:
+      context: ./frontend
+      dockerfile: ../infrastructure/docker/Dockerfile.customer
+    container_name: nearbybazaar_customer
+    restart: unless-stopped
+    ports:
+      - "4200:80"
+    depends_on:
+      - backend
+
+  vendor:
+    build:
+      context: ./frontend
+      dockerfile: ../infrastructure/docker/Dockerfile.vendor
+    container_name: nearbybazaar_vendor
+    restart: unless-stopped
+    ports:
+      - "4201:80"
+    depends_on:
+      - backend
+
+  admin:
+    build:
+      context: ./frontend
+      dockerfile: ../infrastructure/docker/Dockerfile.admin
+    container_name: nearbybazaar_admin
+    restart: unless-stopped
+    ports:
+      - "4202:80"
+    depends_on:
+      - backend
+
+volumes:
+  mongo_data:
