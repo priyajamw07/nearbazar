@@ -8,10 +8,10 @@
     "start:customer": "ng serve customer --port 4200",
     "start:vendor": "ng serve vendor --port 4201",
     "start:admin": "ng serve admin --port 4202",
-    "build:customer": "ng build customer",
-    "build:vendor": "ng build vendor",
-    "build:admin": "ng build admin",
-    "build": "ng build customer && ng build vendor && ng build admin"
+    "build:customer": "ng build customer --output-path dist/customer",
+    "build:vendor": "ng build vendor --base-href /vendor/ --output-path dist/customer/vendor",
+    "build:admin": "ng build admin --base-href /admin/ --output-path dist/customer/admin",
+    "build": "ng build customer --output-path dist/customer && ng build vendor --base-href /vendor/ --output-path dist/customer/vendor && ng build admin --base-href /admin/ --output-path dist/customer/admin"
   },
   "dependencies": {
     "@angular/animations": "^17.3.0",
@@ -22,6 +22,7 @@
     "@angular/platform-browser": "^17.3.0",
     "@angular/platform-browser-dynamic": "^17.3.0",
     "@angular/router": "^17.3.0",
+    "nearbybazaar-platform": "file:..",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.3"
