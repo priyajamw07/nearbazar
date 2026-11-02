@@ -1,9 +1,11 @@
 {
-  "name": "nearbybazaar-platform",
+  "name": "nearbybazaar-root",
   "version": "1.0.0",
-  "description": "NearbyBazaar: Ghar Tak — Multi-Vendor Commerce Platform",
   "private": true,
+  "workspaces": [
+    "frontend"
+  ],
   "scripts": {
-    "build": "npm --prefix frontend install && npm --prefix frontend run build"
+    "build": "npm run build --workspace=frontend"
   }
 }
